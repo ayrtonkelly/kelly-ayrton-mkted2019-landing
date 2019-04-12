@@ -1,0 +1,373 @@
+body {background-color: #ffffff;}
+
+head {background-color: #ffffff;}
+
+footer {background-color: #e56a1b;}
+
+h1 {color: #ffffff;
+    font-family: Montserrat;
+    font-size: 40;}
+
+h2 {color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20;}
+
+h3 {color: #e56a1b;
+    font-family: Montserrat;
+    font-size: 12;}
+
+h4 {color: #494949;
+    font-family: Montserrat;
+    font-size: 12;}
+
+h6 {color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 12;}
+
+    h7 {color: #e56a1b;
+    font-family: Montserrat;
+    font-size: 12;}
+
+p {color: #494949;
+  font-family: Lato;
+  font-size: 8;}
+
+.tab { margin-left: 40px;
+        margin-right: 40px; }
+
+/* NAVIGATION */
+
+$hero-full-screen-bg: url(images/donegal.jpg) center center no-repeat;
+$hero-full-screen-bg-size: cover;
+$hero-full-screen-text-color: $white;
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $hero-full-screen-bg;
+  background-size: $hero-full-screen-bg-size;
+
+  .middle-content-section {
+    text-align: center;
+    color: $hero-full-screen-text-color;
+  }
+
+  .top-content-section {
+    width: 100%;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+
+    svg {
+      height: rem-calc(60);
+      width: rem-calc(60);
+      fill: $hero-full-screen-text-color;
+    }
+  }
+
+  // optional demo styles
+  .top-bar {
+    background: transparent;
+
+    .menu {
+      background: transparent;
+    }
+
+    .menu-text {
+      color: $hero-full-screen-text-color;
+      padding: 1rem;
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: $hero-full-screen-text-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url(images/donegal.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.hero-full-screen .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu-text {
+  color: #ffffff;
+    font-family: Montserrat;
+    font-size: 40;}
+}
+
+.hero-full-screen .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+
+.social-footer {
+  
+.social-footer {
+  padding: 1rem;
+  background: $dark-gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin: 10;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: $white;
+
+      &:hover {
+        color: darken($dark-gray, 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}
+
+
+  padding: 1rem;
+  background: #e56a1b;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 40;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #464646;
+  transition: color 0.3s ease-in;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5;
+}
+
+li {
+  display: inline;
+  float: center;
+}
+
+/* AVATAR */
+
+.avatar {
+  border-radius: 100%;
+  width: 200px;
+  border-style: solid;
+  border-color: #e56a1b;
+}
+
+.avatar-small {
+  border-radius: 50%;
+  width: 50px;
+}
+
+
+/* BANNER */
+
+.banner {
+  height: 100vh;
+  background: url(images/donegal.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #ffffff;
+    font-family: Montserrat;
+ 
+}
+
+.banner p {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+
+/* BUTTONS */
+
+
+.btn-medium {
+  color: #ffffff;
+  font-family: Lato; 
+  border: 1px solid #e56a1b;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: #e56a1b;
+  opacity: 1;
+}
+
+.btn-medium:hover {
+  opacity: 0.6;
+  text-decoration: none;
+  color: #ffffff;
+  background: #e5a882;
+}
+
+/*CARDS*/
+
+
+.marketing-site-content-section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.marketing-site-content-section .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.marketing-site-content-section .marketing-site-content-section-img {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.marketing-site-content-section .marketing-site-content-section-img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-img {
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+.marketing-site-content-section .marketing-site-content-section-block {
+  padding: 1rem;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #e6e6e6;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-block {
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    padding: 2rem;
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
+}
+
+
